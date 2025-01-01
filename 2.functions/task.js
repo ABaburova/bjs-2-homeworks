@@ -106,10 +106,10 @@ console.log("[10, 10, 11, 20, 10] =>", summElementsWorker(10, 10, 11, 20, 10));
 console.log(
   "  Насадка вычисления разницы максимального и минимального элементов"
 );
-console.log("[] =>", diffMaxMinWorker());
+console.log("[] =>", differenceMaxMinWorker());
 console.log(
   "[10, 10, 11, 20, 10] => 20 - 10 =>",
-  diffMaxMinWorker(10, 10, 11, 20, 10)
+  differenceMaxMinWorker(10, 10, 11, 20, 10)
 );
 
 // differenceEvenOddWorker
