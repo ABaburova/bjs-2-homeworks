@@ -1,7 +1,6 @@
 // Задача 1
 console.log("Домашнее задание к занятию 2 Функции");
-console.log(" ");
-console.log("Задача №1 Исследовать массив");
+console.log("\n  Задача №1 Исследовать массив");
 
 function getArrayParams(...arr) {
   let min = Infinity;
@@ -110,6 +109,10 @@ console.log("[] =>", differenceMaxMinWorker());
 console.log(
   "[10, 10, 11, 20, 10] => 20 - 10 =>",
   differenceMaxMinWorker(10, 10, 11, 20, 10)
+);
+console.log(
+  "0, 0, 0, -1, -100 => 0 - (-100) =>",
+  differenceMaxMinWorker(0, 0, 0, -1, -100)
 );
 
 // differenceEvenOddWorker
