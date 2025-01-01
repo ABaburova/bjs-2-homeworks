@@ -1,4 +1,7 @@
 // Задача 1
+console.log("Домашнее задание к занятию 2 Функции");
+console.log(" ");
+console.log("Задача №1 Исследовать массив");
 
 function getArrayParams(...arr) {
   let min = Infinity;
@@ -20,7 +23,6 @@ function getArrayParams(...arr) {
 }
 
 // Пример использования:
-console.log("Задача 1");
 console.log(
   getArrayParams(-99, 99, 10),
   "expect { min: -99, max: 99, avg: 3.33"
@@ -32,7 +34,8 @@ console.log(
 console.log(getArrayParams(5), "expect { min: 5, max: 5, avg: 5");
 
 // Задача 2
-
+console.log(" ");
+console.log("Задача №2 Насадки преобразователи");
 // 1.Находим находить сумму элементов массива и возвращаем её
 
 function summElementsWorker(...arr) {
@@ -94,24 +97,43 @@ function averageEvenElementsWorker(...arr) {
 }
 
 // Пример использования
-console.log("Задача 2");
 // summElementsWorker
-console.log(summElementsWorker()); // 0
-console.log(summElementsWorker(10, 10, 11, 20, 10)); // 61
+console.log("  Насадка суммироавания элементов");
+console.log(summElementsWorker(), "expected { 0"); // 0
+console.log(summElementsWorker(10, 10, 11, 20, 10), "expected { 61"); // 61
 
 // differenceMaxMinWorker
-console.log(diffMaxMinWorker()); // 0
-console.log(diffMaxMinWorker(10, 10, 11, 20, 10)); // 20 - 10 => 10
+console.log(
+  "  Насадка вычисление разницы максимального и минимального элементов"
+);
+console.log(diffMaxMinWorker(), "expected { 0"); // 0
+console.log(diffMaxMinWorker(10, 10, 11, 20, 10), "expected { 10"); // 20 - 10 => 10
 
 // differenceEvenOddWorker
-console.log(differenceEvenOddWorker(94, 51, 57, 41, 47, 66, 58, 10, 38, 17)); // 266 - 213 => 53
-console.log(differenceEvenOddWorker(15, 97, 85, 64, 67, 10, 69, 40, 15, 35)); // 114 - 383 => -269
+console.log("  Насадка вычисления разницы сумм четных и нечетных элементов");
+console.log(
+  differenceEvenOddWorker(94, 51, 57, 41, 47, 66, 58, 10, 38, 17),
+  "expected { 53"
+); // 266 - 213 => 53
+console.log(
+  differenceEvenOddWorker(15, 97, 85, 64, 67, 10, 69, 40, 15, 35),
+  "expected { 269"
+); // 114 - 383 => -269
 
 // averageEvenElementsWorker
-console.log(averageEvenElementsWorker(1, 2, 3, 4, 5, 6, 7, 8, 9)); // [2, 4, 6, 8] => 5
-console.log(averageEvenElementsWorker(15, 97, 85, 64, 67, 10, 69, 40, 15, 35)); // [64, 10, 40] => 38
+console.log("  Насадка вычисления среднего значения элементов");
+console.log(
+  averageEvenElementsWorker(1, 2, 3, 4, 5, 6, 7, 8, 9),
+  "expected { 5"
+); // [2, 4, 6, 8] => 5
+console.log(
+  averageEvenElementsWorker(15, 97, 85, 64, 67, 10, 69, 40, 15, 35),
+  "expected { 38"
+); // [64, 10, 40] => 38
 
 // Задача 3
+console.log(" ");
+console.log("Задача №3 Агрегатор преобразователей");
 
 function makeWork(arrOfArr, func) {
   let maxWorkerResult = -Infinity;
@@ -126,7 +148,6 @@ function makeWork(arrOfArr, func) {
 }
 
 // Примеры использования
-console.log("Задача 3");
 const arr = [
   [10, 10, 11, 20, 10],
   [67, 10, 2, 39, 88],
