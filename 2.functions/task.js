@@ -99,37 +99,37 @@ function averageEvenElementsWorker(...arr) {
 // Пример использования
 // summElementsWorker
 console.log("  Насадка суммироавания элементов");
-console.log(summElementsWorker(), "expected { 0"); // 0
-console.log(summElementsWorker(10, 10, 11, 20, 10), "expected { 61"); // 61
+console.log("[] =>", summElementsWorker());
+console.log("[10, 10, 11, 20, 10] =>", summElementsWorker(10, 10, 11, 20, 10));
 
 // differenceMaxMinWorker
 console.log(
   "  Насадка вычисление разницы максимального и минимального элементов"
 );
-console.log(diffMaxMinWorker(), "expected { 0"); // 0
-console.log(diffMaxMinWorker(10, 10, 11, 20, 10), "expected { 10"); // 20 - 10 => 10
+console.log("[ ] =>", diffMaxMinWorker());
+console.log("[10, 10, 11, 20, 10] =>", diffMaxMinWorker(10, 10, 11, 20, 10));
 
 // differenceEvenOddWorker
 console.log("  Насадка вычисления разницы сумм четных и нечетных элементов");
 console.log(
-  differenceEvenOddWorker(94, 51, 57, 41, 47, 66, 58, 10, 38, 17),
-  "expected { 53"
-); // 266 - 213 => 53
+  "[94, 51, 57, 41, 47, 66, 58, 10, 38, 17] => 266 - 213 =>",
+  differenceEvenOddWorker(94, 51, 57, 41, 47, 66, 58, 10, 38, 17)
+);
 console.log(
-  differenceEvenOddWorker(15, 97, 85, 64, 67, 10, 69, 40, 15, 35),
-  "expected { 269"
-); // 114 - 383 => -269
+  "[15, 97, 85, 64, 67, 10, 69, 40, 15, 35] => 114 - 383 =>",
+  differenceEvenOddWorker(15, 97, 85, 64, 67, 10, 69, 40, 15, 35)
+);
 
 // averageEvenElementsWorker
 console.log("  Насадка вычисления среднего значения элементов");
 console.log(
-  averageEvenElementsWorker(1, 2, 3, 4, 5, 6, 7, 8, 9),
-  "expected { 5"
-); // [2, 4, 6, 8] => 5
+  "[1, 2, 3, 4, 5, 6, 7, 8, 9] => [2, 4, 6, 8] =>",
+  averageEvenElementsWorker(1, 2, 3, 4, 5, 6, 7, 8, 9)
+);
 console.log(
-  averageEvenElementsWorker(15, 97, 85, 64, 67, 10, 69, 40, 15, 35),
-  "expected { 38"
-); // [64, 10, 40] => 38
+  "[15, 97, 85, 64, 67, 10, 69, 40, 15, 35] => [64, 10, 40] =>",
+  averageEvenElementsWorker(15, 97, 85, 64, 67, 10, 69, 40, 15, 35)
+);
 
 // Задача 3
 console.log(" ");
