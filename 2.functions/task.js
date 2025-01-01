@@ -33,8 +33,7 @@ console.log(
 console.log(getArrayParams(5), "expect { min: 5, max: 5, avg: 5");
 
 // Задача 2
-console.log(" ");
-console.log("Задача №2 Насадки преобразователи");
+console.log(" \n Задача №2 Насадки преобразователи");
 // 1.Находим находить сумму элементов массива и возвращаем её
 
 function summElementsWorker(...arr) {
@@ -48,7 +47,7 @@ function summElementsWorker(...arr) {
 
 // 2.Находим разницы максимального и минимального элементов
 
-function diffMaxMinWorker(...arr) {
+function differenceMaxMinWorker(...arr) {
   if (arr.length === 0) return 0;
   let max = arr[0];
   let min = arr[0];
@@ -105,10 +104,10 @@ console.log("[10, 10, 11, 20, 10] =>", summElementsWorker(10, 10, 11, 20, 10));
 console.log(
   "  Насадка вычисления разницы максимального и минимального элементов"
 );
-console.log("[ ] =>", diffMaxMinWorker());
+console.log("[ ] =>", differenceMaxMinWorker());
 console.log(
   "[10, 10, 11, 20, 10] => 20 - 10 =>",
-  diffMaxMinWorker(10, 10, 11, 20, 10)
+  differenceMaxMinWorker(10, 10, 11, 20, 10)
 );
 
 // differenceEvenOddWorker
@@ -134,8 +133,7 @@ console.log(
 );
 
 // Задача 3
-console.log(" ");
-console.log("Задача №3 Агрегатор преобразователей");
+console.log("\n Задача №3 Агрегатор преобразователей");
 
 function makeWork(arrOfArr, func) {
   let maxWorkerResult = -Infinity;
@@ -159,7 +157,7 @@ const arr = [
 console.log("Насадка суммирования значений");
 console.log(makeWork(arr, summElementsWorker)); // максимум из 61, 206, 328, 284 => 328
 console.log("Насадка разницы элементов");
-console.log(makeWork(arr, diffMaxMinWorker)); // максимум из 10, 86, 44, 66 => 86
+console.log(makeWork(arr, differenceMaxMinWorker)); // максимум из 10, 86, 44, 66 => 86
 console.log("Насадка разницы четных и нечетных элементов");
 console.log(makeWork(arr, differenceEvenOddWorker)); // максимум из 39, -6, -184, 92 => 92
 console.log("Насадка среднего значения четных элементов");
