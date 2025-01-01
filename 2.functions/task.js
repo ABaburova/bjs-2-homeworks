@@ -99,14 +99,14 @@ function averageEvenElementsWorker(...arr) {
 // Пример использования
 // summElementsWorker
 console.log("  Насадка суммироавания элементов");
-console.log("[ ] =>", summElementsWorker());
+console.log("[] =>", summElementsWorker());
 console.log("[10, 10, 11, 20, 10] =>", summElementsWorker(10, 10, 11, 20, 10));
 
 // differenceMaxMinWorker
 console.log(
   "  Насадка вычисление разницы максимального и минимального элементов"
 );
-console.log("[ ] =>", diffMaxMinWorker());
+console.log("[] =>", diffMaxMinWorker());
 console.log(
   "[10, 10, 11, 20, 10] => 20 - 10 =>",
   diffMaxMinWorker(10, 10, 11, 20, 10)
