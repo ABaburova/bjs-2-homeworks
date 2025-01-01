@@ -99,7 +99,7 @@ function averageEvenElementsWorker(...arr) {
 // Пример использования
 // summElementsWorker
 console.log("  Насадка суммироавания элементов");
-console.log("[] =>", summElementsWorker());
+console.log("[ ] =>", summElementsWorker());
 console.log("[10, 10, 11, 20, 10] =>", summElementsWorker(10, 10, 11, 20, 10));
 
 // differenceMaxMinWorker
@@ -107,7 +107,10 @@ console.log(
   "  Насадка вычисление разницы максимального и минимального элементов"
 );
 console.log("[ ] =>", diffMaxMinWorker());
-console.log("[10, 10, 11, 20, 10] =>", diffMaxMinWorker(10, 10, 11, 20, 10));
+console.log(
+  "[10, 10, 11, 20, 10] => 20 - 10 =>",
+  diffMaxMinWorker(10, 10, 11, 20, 10)
+);
 
 // differenceEvenOddWorker
 console.log("  Насадка вычисления разницы сумм четных и нечетных элементов");
@@ -154,7 +157,11 @@ const arr = [
   [72, 75, 51, 87, 43],
   [30, 41, 55, 96, 62],
 ];
+console.log("Насадка суммирования значений");
 console.log(makeWork(arr, summElementsWorker)); // максимум из 61, 206, 328, 284 => 328
+console.log("Насадка разницы элементов");
 console.log(makeWork(arr, diffMaxMinWorker)); // максимум из 10, 86, 44, 66 => 86
+console.log("Насадка разницы четных и нечетных элементов");
 console.log(makeWork(arr, differenceEvenOddWorker)); // максимум из 39, -6, -184, 92 => 92
+console.log("Насадка среднего значения четных элементов");
 console.log(makeWork(arr, averageEvenElementsWorker)); // максимум из 12.5, 33.333, 72, 62.666 => 72
