@@ -1,12 +1,15 @@
 //Задание 1
 
-function compareArrays(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
+const compareArrays = (arr1, arr2) => {
+  if (!Array.isArray(arr1) || !Array.isArray(arr2))
+    throw TypeError("this function takes strictly an array");
 
-  return arr1.every((value, index) => value === arr2[index]);
-}
+  if (arr1.length !== arr2.length) return false;
+
+  if (!arr1.length) return true;
+
+  return !arr1.some((item, index) => arr2[index] !== item);
+};
 
 // Примеры вызова
 console.log(compareArrays([8, 9], [6])); // false, разные значения
