@@ -24,7 +24,7 @@ function getUsersNamesInAgeRange(users, gender) {
   const filteredUsers = users.filter((user) => user.gender === gender);
 
   if (filteredUsers.length === 0) {
-    return null;
+    return 0;
   }
 
   const totalAge = filteredUsers.reduce((acc, user) => acc + user.age, 0);
