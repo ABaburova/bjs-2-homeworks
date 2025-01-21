@@ -1,4 +1,5 @@
 //Задача 1
+console.log("Задача № 1. Печатное издание.");
 
 class PrintEditionItem {
   constructor(name, releaseDate, pagesCount) {
@@ -96,7 +97,8 @@ console.log(picknick.state); // 10
 picknick.fix();
 console.log(picknick.state); // 15
 
-//Задача 2
+// Задача 2
+console.log("Задача № 2. Библиотека.");
 
 class Library {
   constructor(name) {
@@ -120,41 +122,6 @@ class Library {
       return this.books.splice(bookIndex, 1)[0];
     }
     return 0;
-  }
-}
-
-class DetectiveBook {
-  constructor(author, name, releaseDate, state) {
-    this.author = author;
-    this.name = name;
-    this.releaseDate = releaseDate;
-    this.state = state;
-  }
-}
-
-class FantasticBook {
-  constructor(author, name, releaseDate, state) {
-    this.author = author;
-    this.name = name;
-    this.releaseDate = releaseDate;
-    this.state = state;
-  }
-}
-
-class NovelBook {
-  constructor(author, name, releaseDate, state) {
-    this.author = author;
-    this.name = name;
-    this.releaseDate = releaseDate;
-    this.state = state;
-  }
-}
-
-class Magazine {
-  constructor(name, releaseDate, state) {
-    this.name = name;
-    this.releaseDate = releaseDate;
-    this.state = state;
   }
 }
 
@@ -238,11 +205,3 @@ if (myLibrary.books.includes(issuedBook)) {
 } else {
   console.log("Книгу не удалось добавить обратно в библиотеку.");
 }
-
-// Проверка текущего состояния библиотеки
-console.log("Текущие книги в библиотеке:");
-myLibrary.books.forEach((book) => {
-  console.log(
-    `Название: ${book.name}, Автор: ${book.author}, Год: ${book.releaseDate}, Состояние: ${book.state}`
-  );
-});
