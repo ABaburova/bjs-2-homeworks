@@ -55,5 +55,5 @@ const averageFemaleAge = getUsersNamesInAgeRange(people, "женский");
 
 console.log(getUsersNamesInAgeRange(people, "мужской")); // 32
 console.log(getUsersNamesInAgeRange(people, "женский")); // 27.4
-console.log(getUsersNamesInAgeRange([], "женский")); // 0
-console.log(getUsersNamesInAgeRange(people, "инопланетянин")); // 0
+console.log(getUsersNamesInAgeRange([], "мужской")); // 0
+console.log(getUsersNamesInAgeRange(people, "средний")); // 0
