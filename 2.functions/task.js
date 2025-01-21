@@ -111,6 +111,7 @@ class Library {
         if (book.state > 30) {
             this.books.push(book);
         }
+        return 0;
     }
 
     findBookBy(type, value) {
