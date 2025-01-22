@@ -113,7 +113,8 @@ class Library {
   }
 
   findBookBy(type, value) {
-    return this.books.find((book) => book[type] === value) || 0;
+    const findedByParamBook = this.books.find((item) => item[type] === value);
+    return !!findedByParamBook ? findedByParamBook : null;
   }
 
   giveBookByName(bookName) {
@@ -121,7 +122,7 @@ class Library {
     if (bookIndex !== -1) {
       return this.books.splice(bookIndex, 1)[0];
     }
-    return 0;
+    return null;
   }
 }
 
